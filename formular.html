@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+    
+    <form action="/Kontakt" method="post">
+        <fieldset>
+            <legend>Kontaktformular</legend>
+            <p>Bitte füllen Sie das folgende Formular aus, um mit uns in Kontakt zu treten.</p>
+
+            <label for="vorname">Vorname+:</label>
+            <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required minlength="2" ><br><br>
+
+            <label for="email">E-Mail+:</label>
+            <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required><br><br>
+
+            <label for="nachname">Nachname+:</label>
+            <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required minlength="2" ><br><br>
+
+            <label for="telefonnummer">Telefonnummer:</label>
+            <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="Ihre Telefonnummer" ><br><br>
+
+            <label for="geburtsdatum">Geburtsdatum*:</label>
+            <input type="date" id="geburtsdatum" name="geburtsdatum" placeholder="Ihr Geburtsdatum" required><br><br>
+        </fieldset>
+
+        
+      
+        <label for="datenschutz">Ich habe die Datenschutzerklärung gelesen *</label>
+        <input type="checkbox" id="datenschutz" name="datenschutz" required><br><br>
+
+        <label for="erfahren">Wie haben Sie uns erfahren?</label>
+        <input type="radio" id="erfahren" name="erfahren" value="soziale Medien"> Internet
+        <input type="radio" id="erfahren" name="erfahren" value="Suchmaschine"> Suchmaschine
+        <input type="radio" id="erfahren" name="erfahren" value="Empfehlung"> Empfehlung
+        <input type="radio" id="erfahren" name="erfahren" value="Anzeige"> Anzeige<br><br>
+
+        <fieldset>
+            <legend>Nachrichten</legend>
+            <label for="betreff">Betreff</label><br>
+            <select id="betreff" name="betreff" required>
+                <option value="" disabled selected>-Bitte wählen-</option>
+                <option value="frage">Allgemeine Frage</option>
+                <option value="angebot">Angebotsanfrage</option>
+                <option value="beschwerde">Beschwerde</option>
+                <option value="feedback">Feedback</option>
+                <option value="sonstiges">Sonstiges</option>
+            </select><br><br>
+
+            <label for="nachricht">Nachricht:</label><br>
+            <textarea id="nachricht" name="nachricht" rows="6" cols="50" placeholder="Ihre Nachricht" required></textarea><br><br>
+        </fieldset>
+        
+        <button type="submit" value="Absenden">
+            Absenden
+        </button>
+    </form>
+    
+</body>
+</html>
