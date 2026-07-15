@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
 </head>
+
 <body>
+    <!-- Header Section -->
     <header>
         <h1>Zhu Yanchao</h1>
         <nav id="navigation">
@@ -18,61 +20,64 @@
          </nav>
     </header>
 
+    <!-- Main Content Section -->
+    <main>
+        <h2 id="Über mich">Über mich</h2>
+        <p>Ich bin ein leidenschaftlicher Webentwickler mit Erfahrung in HTML, CSS und JavaScript.</p>
     
-    <h2 id="Über mich">Über mich</h2>
-    <p>Ich bin ein leidenschaftlicher Webentwickler mit Erfahrung in HTML, CSS und JavaScript.</p>
-    <figure>
-        <img 
-        src="bilder/Bewerbungfoto.jpg"
-        alt="Bewerbungsbild von Zhu Yanchao" 
-        width="300" 
-        loading="lazy">
-        <figcaption>im Jahr 2025 bei CareerDates</figcaption>
-    </figure>
-    
-    <h2 id="interessen">Meine Interessen</h2>
-    <p>Meine Interessen sind vielfältig und umfassen insbesondere Webentwicklung, Design und Technologie.</p>
-    <ul>
-        <li>Webentwicklung</li>
-        <li>Design</li>
-        <li>Technologie</li>
-    </ul>
-    <h2 id="skills">Meine Skills</h2>
-    <p>Meine skills umfassen insbesondere HTML, CSS und JavaScript.</p>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Therma</th>
-                <th>Kenntnisstand</th>
-                <th>Seit Wann</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>JavaScript</th>
-                <td>Fortgeschritten</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <th>HTML</th>
-                <td>Fortgeschritten</td>
-                <td>2019</td>
-            </tr>
-            <tr>
-                <th>CSS</th>
-                <td>Fortgeschritten</td>
-                <td>2019</td>
-            </tr>
-        </tbody>
-    </table>
-    <h2 id="kontakt">Kontakt</h2>
-    <p><a href="mailto:zhu.yanchao@example.com">Kontaktieren Sie mich per E-Mail</a></p>
+        <figure>
+            <img 
+            src="bilder/Bewerbungfoto.jpg"
+            alt="Bewerbungsbild von Zhu Yanchao" 
+            width="300" 
+            loading="lazy">
+            <figcaption>im Jahr 2025 bei CareerDates</figcaption>
+        </figure>
+        
+        <h2 id="interessen">Meine Interessen</h2>
+        <p>Meine Interessen sind vielfältig und umfassen insbesondere Webentwicklung, Design und Technologie.</p>
+        <ul>
+            <li>Webentwicklung</li>
+            <li>Design</li>
+            <li>Technologie</li>
+        </ul>
+        <h2 id="skills">Meine Skills</h2>
+        <p>Meine skills umfassen insbesondere HTML, CSS und JavaScript.</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Therma</th>
+                    <th>Kenntnisstand</th>
+                    <th>Seit Wann</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>JavaScript</th>
+                    <td>Fortgeschritten</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <td>Fortgeschritten</td>
+                    <td>2019</td>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <td>Fortgeschritten</td>
+                    <td>2019</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="kontakt">Kontakt</h2>
+        <p><a href="mailto:zhu.yanchao@example.com">Kontaktieren Sie mich per E-Mail</a></p>
+    </main>
     <form action="/Kontakt" method="post">
         <fieldset>
             <legend>Kontaktformular</legend>
             <p>Bitte füllen Sie das folgende Formular aus, um mit uns in Kontakt zu treten.</p>
 
-            <label for="vorname">Vorname+:</label>
+            <label for="vorname">Vorname*:</label>
             <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required minlength="2" ><br><br>
 
             <label for="email">E-Mail*:</label>
