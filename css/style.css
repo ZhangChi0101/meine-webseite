@@ -1,0 +1,84 @@
+body {
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dfe6d5;
+}
+
+h1 {
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    color: #065ca1;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.gross {
+    font-size: 2rem;
+}
+
+#haupttitel {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 50px;
+    color: #35ef0c;
+}
+
+h1,
+h2,
+h3 {
+    color: #d62fb2;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Georgia, sans-serif;
+}
+
+nav a {
+    color: #2f5ed6;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0.5rem;
+}
+
+p.intro {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+    front-weight: bold;
+}
+a.aktiv {
+    color: #e47c05;
+    font-weight: bold;
+}
+
+figure {    
+    text-align: center;
+    margin: 20px 0;
+}
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
