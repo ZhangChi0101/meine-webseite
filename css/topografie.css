@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.intro{
+    font-size: 1.2em;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.quelle{
+    font-size: 0.85em;
+    color: #888888;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: 700;
+    
+}
+h2{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.7;
+    margin-bottom: 1em;
+    
+    
+}

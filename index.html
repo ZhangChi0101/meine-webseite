@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="de" lang="cn">
+<html lang="de">
 <head>
-    <link       rel="stylesheet" href="/css/style.css">  
+    <link rel="stylesheet" href="css/style.css">  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine Webseite</title>
@@ -23,13 +23,13 @@
 
     <!-- Main Content Section -->
     <main>
-        <h2 id="Über mich">Über mich</h2>
+        <h2 id="Übermich">Über mich</h2>
         <p>Ich bin ein leidenschaftlicher Webentwickler mit Erfahrung in HTML, CSS und JavaScript.</p>
     
         <figure>
             <img 
             src="bilder/Bewerbungfoto.jpg"
-            alt="Bewerbungsbild von Zhu Yanchao" 
+            alt="Bewerbungsbild von Zhu Yanchao, lächerln mit neutralem Hintergrund" 
             width="300" 
             loading="lazy">
             <figcaption>im Jahr 2025 bei CareerDates</figcaption>
@@ -44,7 +44,7 @@
         </ul>
         <h2 id="skills">Meine Skills</h2>
         <p>Meine skills umfassen insbesondere HTML, CSS und JavaScript.</p>
-        <table border="1">
+        <table>
             <thead>
                 <tr>
                     <th>Therma</th>
@@ -72,61 +72,65 @@
         </table>
         <h2 id="kontakt">Kontakt</h2>
         <p><a href="mailto:zhu.yanchao@example.com">Kontaktieren Sie mich per E-Mail</a></p>
-    </main>
-    <form action="/Kontakt" method="post">
-        <fieldset>
-            <legend>Kontaktformular</legend>
-            <p>Bitte füllen Sie das folgende Formular aus, um mit uns in Kontakt zu treten.</p>
 
-            <label for="vorname">Vorname*:</label>
-            <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required minlength="2" ><br><br>
+        <form action="/Kontakt" method="post">
+            <fieldset>
+                <legend>Kontaktformular</legend>
+                <p>Bitte füllen Sie das folgende Formular aus, um mit uns in Kontakt zu treten.</p>
 
-            <label for="email">E-Mail*:</label>
-            <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required><br><br>
+                <label for="vorname">Vorname*:</label>
+                <input type="text" id="vorname" name="vorname" placeholder="Ihr Vorname" required minlength="2" ><br><br>
 
-            <label for="nachname">Nachname*:</label>
-            <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required minlength="2" ><br><br>
+                <label for="email">E-Mail*:</label>
+                <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required><br><br>
 
-            <label for="telefonnummer">Telefonnummer:</label>
-            <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="Ihre Telefonnummer" ><br><br>
+                <label for="nachname">Nachname*:</label>
+                <input type="text" id="nachname" name="nachname" placeholder="Ihr Nachname" required minlength="2" ><br><br>
 
-            <label for="geburtsdatum">Geburtsdatum*:</label>
-            <input type="date" id="geburtsdatum" name="geburtsdatum" placeholder="Ihr Geburtsdatum" required><br><br>
-        </fieldset>
+                <label for="telefonnummer">Telefonnummer:</label>
+                <input type="tel" id="telefonnummer" name="telefonnummer" placeholder="Ihre Telefonnummer" ><br><br>
+
+                <label for="geburtsdatum">Geburtsdatum*:</label>
+                <input type="date" id="geburtsdatum" name="geburtsdatum" placeholder="Ihr Geburtsdatum" required><br><br>
+            </fieldset>
 
         
       
-        <label for="datenschutz">Ich habe die Datenschutzerklärung gelesen *</label>
-        <input type="checkbox" id="datenschutz" name="datenschutz" required><br><br>
+            <label for="datenschutz">Ich habe die Datenschutzerklärung gelesen *</label>
+            <input type="checkbox" id="datenschutz" name="datenschutz" required><br><br>
 
-        <label for="erfahren">Wie haben Sie uns erfahren?</label>
-        <input type="radio" id="erfahren" name="erfahren" value="soziale Medien"> Internet
-        <input type="radio" id="erfahren" name="erfahren" value="Suchmaschine"> Suchmaschine
-        <input type="radio" id="erfahren" name="erfahren" value="Empfehlung"> Empfehlung
-        <input type="radio" id="erfahren" name="erfahren" value="Anzeige"> Anzeige<br><br>
+            <label for="erfahren">Wie haben Sie uns erfahren?</label>
+            <input type="radio" id="internet" name="internet" value="Internet"> Internet
+            <input type="radio" id="suchmaschine" name="suchmaschine" value="Suchmaschine"> Suchmaschine
+            <input type="radio" id="empfehlung" name="empfehlung" value="Empfehlung"> Empfehlung
+            <input type="radio" id="anzeige" name="anzeige" value="Anzeige"> Anzeige<br><br>
 
-        <fieldset>
-            <legend>Nachrichten</legend>
-            <label for="betreff">Betreff</label><br>
-            <select id="betreff" name="betreff" required>
-                <option value="" disabled selected>-Bitte wählen-</option>
-                <option value="frage">Allgemeine Frage</option>
-                <option value="angebot">Angebotsanfrage</option>
-                <option value="beschwerde">Beschwerde</option>
-                <option value="feedback">Feedback</option>
-                <option value="sonstiges">Sonstiges</option>
-            </select><br><br>
+            <fieldset>
+                <legend>Nachrichten</legend>
+                <label for="betreff">Betreff</label><br>
+                <select id="betreff" name="betreff" required>
+                    <option value="" disabled selected>-Bitte wählen-</option>
+                    <option value="frage">Allgemeine Frage</option>
+                    <option value="angebot">Angebotsanfrage</option>
+                    <option value="beschwerde">Beschwerde</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="sonstiges">Sonstiges</option>
+                </select><br><br>
 
-            <label for="nachricht">Nachricht:</label><br>
-            <textarea id="nachricht" name="nachricht" rows="6" cols="50" placeholder="Ihre Nachricht" required></textarea><br><br>
-        </fieldset>
+                <label for="nachricht">Nachricht:</label><br>
+                <textarea id="nachricht" name="nachricht" rows="6" cols="50" placeholder="Ihre Nachricht" required></textarea><br><br>
+            </fieldset>
         
-        <button type="submit" value="Absenden">
-            Absenden
-        </button>
-    </form>
+            <button type="submit" value="Absenden">
+                Absenden
+            </button>
+
+        </form>
+    </main>
+    
     <footer>
         <p>&copy; 2026 Zhu Yanchao. Alle Rechte vorbehalten.</p>
+    </footer>
 
 </body>
 </html>

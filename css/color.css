@@ -1,0 +1,5 @@
+p{color: blue;}
+.test{color: red;}
+p.test{color: green;}
+#intro{color: orange;}
+body p{color: grey;}
